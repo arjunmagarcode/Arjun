@@ -41,7 +41,7 @@ const HeroText = () => {
         className="flex items-center gap-4 mt-4"
       >
         <a
-          href="public/images/ArjunMagar.pdf"
+          href="/images/ArjunMagar.pdf"
           download
           className="px-6 py-3 font-semibold text-white bg-orange rounded-lg shadow-neon hover:bg-orange-600 transition duration-300"
         >
