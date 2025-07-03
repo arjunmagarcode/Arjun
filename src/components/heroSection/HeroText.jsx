@@ -19,7 +19,7 @@ const HeroText = () => {
         viewport={{ once: false, amount: 0 }}
         className="lg:text-2xl sm:text-xl uppercase text-lightGrey dark:text-lightCyan"
       >
-        Full-Stack Software Engineer (SWE)
+        Aspiring Full-Stack Software Engineer (SWE)
       </motion.h2>
 
       <motion.h1
@@ -41,7 +41,7 @@ const HeroText = () => {
         className="flex items-center gap-4 mt-4"
       >
         <a
-          href="/Arjun_Pun_Magar_Resume.pdf"
+          href="public/images/ArjunMagar.pdf"
           download
           className="px-6 py-3 font-semibold text-white bg-orange rounded-lg shadow-neon hover:bg-orange-600 transition duration-300"
         >

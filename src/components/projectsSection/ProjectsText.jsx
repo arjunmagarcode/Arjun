@@ -3,9 +3,7 @@ const ProjectsText = () => {
     <div className="flex flex-col items-center mt-[100px]">
       <h2 className="text-6xl text-cyan mb-10">Projects</h2>
       <p className="text-lg text-center">
-        I have worked on a variety of web development projects, ranging from
-        responsive websites for small businesses to full-stack applications and
-        complex front-end interfaces.
+        I have worked on a variety of web development projects, including building and customizing personal portfolio websites, implementing responsive UIs using React and Tailwind CSS, and deploying full-stack applications using Vite and Vercel.
       </p>
     </div>
   );

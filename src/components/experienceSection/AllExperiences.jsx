@@ -4,27 +4,39 @@ import { motion } from "framer-motion";
 import { fadeIn } from "../../framerMotion/variants";
 
 const experiences = [
-/*{
-    job: "Front-End Developer",s
-    company: "Alex Apps",
-    date: "2022 - Present",
+  {
+    job: "SWE intern",
+    company: "Sports and Media Inc",
+    date: "June 2025 - Present",
     responsibilities: [
-      "Implementing reusable components.",
-      "Participating in large scale application.",
-      "Working on the performance of web applications.",
-      "Generating new ideas for better user experience.",
+      "Developed and optimized gameplay systems using programming languages such as Java/C++ to improveperformance and player experience.",
+      "Collaborated with cross-functional teams including artists and engineers to implement interactive features andUI/UX prototypes.",
+      "Implemented data structures and algorithms to manage game events, player progression, and real-time statsintegration.",
+      "Conducted code reviews, debugging, and iterative testing to enhance gameplay balance and stability.",
     ],
   },
   {
-    job: "Course Instructor",
-    company: "Nucamp",
-    date: "2023 - Present",
+    job: "Desk Assistant, Office of Residence Life ",
+    company: "University of Southern Mississippi ",
+    date: "Jan 2025 - Present",
     responsibilities: [
-      "Explaining and facilitating web development concepts.",
-      "Help students with their assignments and grade them weekly.",
-      "Provide support for students through their learning journey.",
+      "Assisted residents and staff with housing inquiries and campus resources, improving communication and support.",
+      "Monitored resident safety protocols and enforced building access procedures.",
+      "Organized and documented maintenance requests, streamlining operations and improving response time.",
+      "Demonstrated reliability, professionalism, and attention to detail in a fast-paced campus environment.",
     ],
   },
+ /*{
+    job: "Course Instructor",
+    company: "Sprints",
+    date: "2024 - Present",
+    responsibilities: [
+      "Teaching JavaScript, React and TailwindCSS.",
+      "Participating in preparing course materials.",
+      "Helping students through their way in learning web development technologies.",
+    ],
+  },
+
   {
     job: "Course Instructor",
     company: "Sprints",
@@ -35,31 +47,15 @@ const experiences = [
       "Helping students through their way in learning web development technologies.",
     ],
   },
-  */
+ */ 
 ];
 
 const AllExperiences = () => {
   return (
     <div className="flex md:flex-row sm:flex-col items-center justify-between">
-      {experiences.map((experience, index) => {
-        return (
-          <>
-            <SingleExperience key={index} experience={experience} />
-            {index < 2 ? (
-              <motion.div
-                variants={fadeIn("right", 0)}
-                initial="hidden"
-                whileInView="show"
-                viewport={{ once: false, amount: 0.7 }}
-              >
-                <FaArrowRightLong className="text-6xl text-orange lg:block sm:hidden" />
-              </motion.div>
-            ) : (
-              ""
-            )}
-          </>
-        );
-      })}
+      {experiences.map((experience, index) => (
+        <SingleExperience key={index} experience={experience} />
+      ))}
     </div>
   );
 };

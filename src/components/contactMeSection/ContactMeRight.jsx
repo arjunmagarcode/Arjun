@@ -5,7 +5,7 @@ const ContactMeRight = () => {
   return (
     <div className="flex flex-col items-center justify-center gap-12">
       <img
-        src="../../public/images/images.jpeg"
+        src="/images/images.jpeg"
         alt="email image"
         className="max-w-[300px]"
       />
@@ -16,3 +16,4 @@ const ContactMeRight = () => {
 };
 
 export default ContactMeRight;
+

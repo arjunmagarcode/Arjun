@@ -4,37 +4,28 @@ import { motion } from "framer-motion";
 import { fadeIn } from "../../framerMotion/variants";
 
 const projects = [
-  /*
   {
-    name: "Vacation of Africa",
-    year: "Mar2022",
-    align: "right",
-    image: "../../public/images/website-img-1.jpg",
-    link: "#",
+    name: "Personal Portfolio",
+    year: "July 2025",
+    description:
+      "Developed a fully responsive personal portfolio using React, Vite, Tailwind CSS, and Framer Motion. Includes animated sections, project showcase, and deployed on Vercel.",
+    github: "https://github.com/arjunmagarcode/Arjun",
   },
   {
-    name: "Moola App",
-    year: "Sept2022",
-    align: "left",
-    image: "../../public/images/website-img-2.webp",
-    link: "#",
-  },
-  {
-    name: "Tourzania",
-    year: "Jan2023",
-    align: "right",
-    image: "../../public/images/website-img-3.jpg",
-    link: "#",
-  },
-  {
-    name: "Bank of Luck",
-    year: "May2024",
-    align: "left",
-    image: "../../public/images/website-img-4.jpg",
-    link: "#",
-  },
+    name: "Flight Booking System | C++, Data Structures (AVL Tree) ",
+    year: "April 2025",
+    description:
+      "Developed a console-based flight booking system in C++ with AVL Trees for efficient data handling, seat map visualization, and advanced search features. Collaborated in a team of four with a focus on modular design, documentation, and testing.",
 
-  */
+    github: "https://github.com/arjunmagarcode/Flight_booking_system",
+  },
+  {
+    name: "Rock Paper Scissors",
+    year: "June 2025",
+    description:
+      "Developed a browser-based Rock Paper Scissors game with HTML, CSS, and JavaScript. The game features a clean UI, real-time score updates, and responsive interactions using DOM manipulation and event handling..",
+    github: "https://github.com/arjunmagarcode/Rock_paper_scissors-",
+  },
 ];
 
 const ProjectsMain = () => {
@@ -48,18 +39,16 @@ const ProjectsMain = () => {
       >
         <ProjectsText />
       </motion.div>
-      <div className="flex flex-col gap-20 max-w-[900px] mx-auto mt-12">
-        {projects.map((project, index) => {
-          return (
-            <SingleProject
-              key={index}
-              name={project.name}
-              year={project.year}
-              align={project.align}
-              image={project.image}
-            />
-          );
-        })}
+      <div className="flex flex-col gap-10 mt-12">
+        {projects.map((project, index) => (
+          <SingleProject
+            key={index}
+            name={project.name}
+            year={project.year}
+            description={project.description}
+            github={project.github}
+          />
+        ))}
       </div>
     </div>
   );
